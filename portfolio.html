@@ -11,13 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -34,7 +28,7 @@
             <span class="logo--accent">Web</span>Studio
           </a>
           <ul class="nav__list">
-            <li class="nav__item nav__item">
+            <li class="nav__item">
               <a
                 href="./index.html"
                 class="link nav__link"
@@ -64,7 +58,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header__auth">
+        <ul class="auth">
           <li class="auth__item">
             <a href="mailto:info@devstudio.com" class="link auth__link">
               <svg class="auth__img" width="16px" height="12px">
@@ -87,21 +81,21 @@
       <section class="section">
         <div class="examples container">
           <h1 class="visually-hiden">портфолио</h1>
-          <ul class="sort__list">
+          <ul class="sort-list">
             <li class="sort__item">
-              <button type="button" class="sort__button sort__button--current">Все</button>
+              <button type="button" class="sort-button sort-button--current">Все</button>
             </li>
             <li class="sort__item">
-              <button type="button" class="sort__button">Веб-сайты</button>
+              <button type="button" class="sort-button">Веб-сайты</button>
             </li>
             <li class="sort__item">
-              <button type="button" class="sort__button">Приложения</button>
+              <button type="button" class="sort-button">Приложения</button>
             </li>
             <li class="sort__item">
-              <button type="button" class="sort__button">Дизайн</button>
+              <button type="button" class="sort-button">Дизайн</button>
             </li>
             <li class="sort__item">
-              <button type="button" class="sort__button">Маркетинг</button>
+              <button type="button" class="sort-button">Маркетинг</button>
             </li>
           </ul>
           <ul class="examples__list">
@@ -320,11 +314,11 @@
             <span class="logo--accent">Web</span>Studio
           </a>
           <address>
-            <ul class="adres__list">
+            <ul class="footer-adres__list">
               <li>
                 <a
                   href="https://goo.gl/maps/RdCzEvvyoKSF4xjN6"
-                  class="link footer__link link--gmaps"
+                  class="link link--gmaps"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   title="Ссылка на геолокацию"
@@ -332,21 +326,13 @@
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li>
-                <a href="mailto:info@example.com" class="link footer__link link--adr"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+380991111111" class="link footer__link link--adr"
-                  >+38 099 111 11 11</a
-                >
-              </li>
+              <li><a href="mailto:info@example.com" class="link link--adr">info@example.com</a></li>
+              <li><a href="tel:+380991111111" class="link link--adr">+38 099 111 11 11</a></li>
             </ul>
           </address>
         </div>
-        <div class="footer__social">
-          <h2 class="social__title">присоединяйтесь</h2>
+        <div class="footer-social">
+          <h2 class="footer-social__title">присоединяйтесь</h2>
           <ul class="social__list">
             <li class="social__item social__item--dark">
               <a

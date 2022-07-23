@@ -10,12 +10,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" 
-    />
+    />    
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   
@@ -58,7 +54,7 @@
             </li>                    
           </ul>
         </nav>
-        <ul class="header__auth">          
+        <ul class="auth">          
           <li class="auth__item">
             <a href="mailto:info@devstudio.com" class="link auth__link">
             <svg class="auth__img" width="16px" height="12px">
@@ -175,7 +171,7 @@
         </div>
       </section>
       <!-- Our team-->
-      <section class="team__section">
+      <section class="section section--team">
         <div class="team container">
           <h2 class="title team__title">Наша команда</h2>
           <ul class="team__list">
@@ -420,11 +416,11 @@
             <span class="logo--accent">Web</span>Studio
           </a>
           <address>
-            <ul class="adres__list">
+            <ul class="footer-adres__list">
               <li>
                   <a
                     href="https://goo.gl/maps/RdCzEvvyoKSF4xjN6"
-                    class="link footer__link link--gmaps"
+                    class="link link--gmaps"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     title="Ссылка на геолокацию"
@@ -432,13 +428,13 @@
                   г. Киев, пр-т Леси Украинки, 26
                   </a>
               </li>
-              <li><a href="mailto:info@example.com" class="link footer__link link--adr">info@example.com</a></li>
-              <li><a href="tel:+380991111111" class="link footer__link link--adr">+38 099 111 11 11</a></li>
+              <li><a href="mailto:info@example.com" class="link link--adr">info@example.com</a></li>
+              <li><a href="tel:+380991111111" class="link link--adr">+38 099 111 11 11</a></li>
             </ul>        
           </address>
         </div> 
-        <div class="footer__social">
-          <h2 class="social__title">присоединяйтесь</h2>
+        <div class="footer-social">
+          <h2 class="footer-social__title">присоединяйтесь</h2>
           <ul class="social__list">
             <li class="social__item social__item--dark">
               <a href="https://www.instagram.com/"class="social__link social__link--dark"  target="_blank" rel="noopener noreferrer nofollow" title="Ссылка на instagramm">
@@ -475,7 +471,7 @@
           <div class="subskribe__form">
             <form>
               <label>
-                <input  class="subskribe__email" type="email" name="subskribe-form" placeholder="E-mail" autocomplete="on" novalodate>
+                <input class="subskribe__email" type="email" name="subskribe-form" placeholder="E-mail" autocomplete="on" novalodate>
               </label>            
             </form>
             <button class="button button--subskribe" type="submit">
@@ -488,7 +484,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- backdro & modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal__window">
         <h2 class="title modal__title">
@@ -535,13 +531,14 @@
           <label class="checkbox__item">
             <input class="checkbox" type="checkbox" name="user-checkbox" checked/> 
             <span class="checkbox__icon"></span>              
-            <span class="checkbox__text">Соглашаюсь c рассылкой и принимаю <a href="" class="user-terms">Условия договора</a></span>
+            <span class="checkbox__text">Соглашаюсь c рассылкой и принимаю <a href="" class="checkbox__text--user-terms">Условия договора</a></span>
           </label>
 
         </form>
         <button type="submit" class="button button--modal">Отправить</button>
       </div>
     </div>
+    <!-- skript for opening modal -->
     <script src="./js/modal.js"></script>    
   </body>
 </html>
