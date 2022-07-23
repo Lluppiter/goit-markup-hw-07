@@ -283,6 +283,13 @@ summary {
           transform: scale(0.1), opacity(0.1);
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(0.1), opacity(0.1);
+          transform: scale(0.1), opacity(0.1);
+}
+
 /* base */
 ul {
   list-style: none;
@@ -332,6 +339,9 @@ a {
 }
 .section--team {
   background-color: var(--background-color);
+}
+.section--advantages {
+  padding-bottom: 0;
 }
 
 .main {
@@ -437,6 +447,8 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  -webkit-transition: var(--standart-go-over);
+  transition: var(--standart-go-over);
 }
 .link:hover, .link:focus {
   color: var(--accent-color);
@@ -585,6 +597,7 @@ a {
   margin-top: 72px;
 }
 .subskribe__title {
+  font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -710,39 +723,6 @@ a {
   bottom: 11px;
   left: 12px;
 }
-.form__coment {
-  padding-left: 12px;
-}
-.form__coment::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.form__coment::-moz-placeholder {
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.form__coment:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.form__coment::-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.form__coment::placeholder {
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
 
 .input {
   width: 100%;
@@ -760,7 +740,38 @@ a {
   padding: 10px 12px 10px 42px;
 }
 .input--coment {
+  resize: none;
   padding: 12px 16px;
+}
+.input--coment::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.input--coment::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.input--coment:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.input--coment::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.input--coment::placeholder {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .input:focus {
   outline-color: var(--accent-color);
@@ -916,7 +927,7 @@ a {
   font-size: 16px;
   line-height: 1.88;
 }
-.examples-title {
+.examples__title {
   color: var(--title-text-collor);
   font-size: 18px;
   line-height: 2;
@@ -1153,6 +1164,7 @@ a {
 }
 
 .footer-social__title {
+  font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
   color: var(--accent-wht-collor);

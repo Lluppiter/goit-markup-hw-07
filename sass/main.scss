@@ -1,6 +1,7 @@
 /* utils */
-@import './utils/_normalise';
-@import './utils/_variables';
+
+@import './utils/normalise';
+@import './utils/variables';
 @import './utils/_visuali-hidden';
 @import './utils/is-hidden';
 /* base */
@@ -20,7 +21,7 @@
 @import './components/_backdrop';
 @import './components/_close-button';
 @import './components/_form';
-@import './components/_input';
+@import './components/input';
 @import './components/_checkbox';
 @import './components/sort-list';
 @import './components/sort-button';
